@@ -1,7 +1,7 @@
 # lyfeCycle
  
  Utilisation de YARN fortement recommandée
- Cette API permet d'accéder et de mettre à jour le statut d'une commande
+ Cette API permet d'accéder et de mettre à jour le statut d'une annonce
 
  Se base sur l'API des commandes située ici : https://gitlab.com/eliottbernard44/api-catalogue-annonce
 
