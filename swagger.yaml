@@ -1,0 +1,61 @@
+/produits/:
+  get:
+      description: get all annonces
+      responses:
+          '200':
+              description: A successful response
+              content:
+                  application/json:
+                    type: array
+                      schema: 
+                          type: string
+                          
+tags:
+  name: annonces
+components:
+  schemas:
+    annonces:
+        type: object
+        properties: 
+            id:          
+                type: integer          
+                example: 10
+            statut:
+                type: string
+                example: "sold"
+            produit:
+                type: $ref: "#/components/schemas/produits"
+    produits:
+        type: object
+        properties:
+            id:          
+                type: integer          
+                example: 121
+            name:
+                type: string
+                example: "sold"
+            prix:          
+                type: integer          
+                example: 24
+            description:
+                type: string
+                example: "super sèche-cheveux"
+  /produits:
+    post:
+      tags: 
+          - annonces
+      description: post new annonce
+      security:
+        - bearerAuth: []
+      requestBody:
+          content:
+             application/json:
+                schema:
+                       $ref: "#/components/schemas/annonces"
+      responses:
+          '204':
+              description: empty response
+          '401':
+              description: token invalid
+          '500':
+              description: error
