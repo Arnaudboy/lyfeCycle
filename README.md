@@ -3,9 +3,9 @@
  Utilisation de YARN fortement recommandée
  Cette API permet d'accéder et de mettre à jour le statut d'une annonce
 
- Se base sur l'API des commandes située ici : https://gitlab.com/eliottbernard44/api-catalogue-annonce
+ Se base sur l'API des commandes située ici : https://github.com/Munderstand101/TP2-CPDL-Catalogues
 
- (Hello Géo et Eliott)
+ (Hello Valentin et Maxence)
 
  __Prerequis__ : installer nvm et yarn pour votre OS
 
