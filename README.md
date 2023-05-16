@@ -17,7 +17,7 @@
 
  __Étape 4__ : par défaut le server se lance sur le **__PORT 3001__** il est possible de definir un autre port dans un fichier **.env** (voir fichier .env.example)
 
- __Étape 5__ : Cette API dépend de l'API Command pour fonctionner, c'est elle qui détient les informations sur les produits. Une fois lancée, renseignez l'ip et le port utilisé dans le .env
+ __Étape 5__ : Cette API dépend de l'API Command pour fonctionner, c'est elle qui détient les informations sur les produits. Une fois l'API Command lancée, renseignez l'ip et le port utilisé dans le .env
 
  __Étape 6__ : `node index.js`
 
