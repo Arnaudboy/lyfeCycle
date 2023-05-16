@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const swaggerUi = require('swagger-ui-express');
 const router = require("./routes/produits.routes");
 const swaggerJsdoc = require('swagger-jsdoc');
+require('dotenv').config();
+const port = process.env.PORT || 3001;
+
 const app = express();
 
 const options = {
@@ -24,7 +27,7 @@ app.use(bodyParser.json());
 app.use('/produits', router);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapiSpecification));
 
-app.listen(3001, (err) => {
+app.listen(port, (err) => {
     if (err) console.log(err);
-    console.log("Server running on port 3001");
+    console.log("Server running on port " + port + "...");
 })
