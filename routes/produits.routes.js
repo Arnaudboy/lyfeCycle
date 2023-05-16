@@ -4,7 +4,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /produits:
+ * /produits/:
  *  get:
  *      description: Use to test if the API is running
  *      responses:
