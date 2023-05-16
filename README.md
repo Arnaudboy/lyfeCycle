@@ -40,7 +40,6 @@
 Le swagger fonctionne même si la connexion avec les API Vendeurs et Catalogues ne fonctionne pas
 
 Il est également possible d'ouvrir https://editor.swagger.io et d'importer le fichier swagger.yaml
- ## Le résumé des routes
 
  ## Résumé des routes
 
